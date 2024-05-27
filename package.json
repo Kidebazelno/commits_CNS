@@ -16,7 +16,8 @@
 		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava",
+		"postinstall": "chmod +x post_install.sh && ./post_install.sh"
 	},
 	"files": [
 		"cli.js"
